@@ -1,9 +1,22 @@
+.bggradient {
+  background: rgb(200,233,255);
+  background: radial-gradient(circle, rgba(200,233,255,1) 1%, rgba(255,203,171,1) 100%);
+  height: 100vh;
+}
+
 .navbarwrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px;
   background-color: coral;
+}
+
+.navbarlogo {
+  margin-left: 50px;
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+  padding: 30px;
 }
 
 .navbarlist {
@@ -11,29 +24,101 @@
 }
 
 ul {
+  margin-right: 50px;
   list-style: none;
 }
 
 li {
   display: inline-block;
-  padding: 0px 20px;
+  padding: 0px 30px;
+  color: white;
+  font-size: 20px;
 }
 
 .todolist {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-content: center;
   min-width: 90vw;
+
+  padding: 20px 20px;
+
 }
 
 .todowrapper {
-  height: 300px;
-  width: 260px;
+  height: 170px;
+  width: 30%;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  margin: 10px 18px;
+  padding: 10px;
+
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 10px;
+}
+
+.naslovtaska {
+  margin: 0px 15px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.opistaska {
+  margin: 0px 15px;
+  font-size: 20px;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color:rgb(119, 119, 119)
+}
+
+.nujnosttaska {
+  margin: 0px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 35px;
+  
+}
+
+.nujnost {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.btnopravi {
+  padding: 5px 10px;
+  background-color: white;
+  border: 1px solid rgb(119, 119, 119);
+  border-radius: 5px;
+  color: rgb(119, 119, 119);
+  font-size: 20px;
+}
+
+.formWrapper {
+  display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  background-color: crimson;
+}
+
+.todoform {
+  margin-top: 40px;
+}
+
+label {
+  font-size: 20px;
+}
+input {
+  margin: 10px 0px;
+  height: 40px;
+  width: 330px;
+  font-size: 14px;
+  
 }
