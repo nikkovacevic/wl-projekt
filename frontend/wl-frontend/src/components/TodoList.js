@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
-import Todo from "./Todo"
+import Todo from "./Todo";
 
 export default function Todolist() {
-    
+
     const [vsiTodoji, setVsiTodoji] = useState([]);
 
     const getTodos = async () => {
         try {
-            
             const response = await fetch("http://localhost:8080/todos")
             const jsondata = await response.json();
 
@@ -24,11 +23,11 @@ export default function Todolist() {
 
     return (
         <>
-           <div className="todolist">
-               {vsiTodoji.map((todo,index) => {
-                   return <Todo key={index} td={todo} />
-               })}
-            </div> 
+            <div className="todolist">
+                {vsiTodoji.map((todo, index) => {
+                    return <Todo key={index} td={todo} />
+                })}
+            </div>
         </>
     )
 }
