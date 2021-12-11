@@ -4,11 +4,23 @@
   height: 100vh;
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
+.opravljeno {
+  text-decoration: none;
+  color: rgb(119, 119, 119);
+}
+.podrobnilink{
+  text-decoration: none;
+  color: black;
+}
 .navbarwrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: coral;
+  background-color: rgb(0, 128, 187);
 }
 
 .navbarlogo {
@@ -48,7 +60,7 @@ li {
 
 .todowrapper {
   height: 170px;
-  width: 30%;
+  width: 26%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -91,6 +103,7 @@ li {
   border-radius: 5px;
   font-size: 20px;
   border-radius: 5px;
+  color: white;
 }
 
 .btnopravi {
@@ -100,6 +113,7 @@ li {
   border-radius: 5px;
   color: rgb(119, 119, 119);
   font-size: 20px;
+  cursor: pointer;
 }
 
 .formWrapper {
@@ -120,5 +134,61 @@ input {
   height: 40px;
   width: 330px;
   font-size: 14px;
+}
+
+.itemwrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.podrobnonaslov {
+  font-size: 40px;
+  margin: 10px 15px;
+  font-weight: 500;
+}
+
+.podrobnoopis {
+  font-size: 20px;
+  margin: 20px 15px;
+}
+
+.podrobnonujnost {
+  font-size: 25px;
+  margin: 10px 15px;
+
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  border-radius: 5px;
+  color: white;
+  width: fit-content;
+
+}
+
+.btnopravi2 {
+  padding: 5px 10px;
+  background-color: white;
+  border: 1px solid rgb(119, 119, 119);
+  border-radius: 5px;
+  color: rgb(119, 119, 119);
+  font-size: 20px;
+  cursor: pointer;
+  width: fit-content;
+  margin: 10px 15px;
+}
+
+.buttondodaj {
+  
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid rgb(119, 119, 119);
+    border-radius: 5px;
+    color: rgb(119, 119, 119);
+    font-size: 20px;
+    cursor: pointer;
+    width: fit-content;
+    margin: 10px auto;
+    display: block;
   
 }

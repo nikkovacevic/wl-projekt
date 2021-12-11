@@ -4,6 +4,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import TodoList from './components/TodoList'
 import Dodaj from './components/Dodaj'
+import Podrobno from './components/Podrobno'
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
         </Route>
         <Route path="/dodaj">
           <Dodaj/>
+        </Route>
+        <Route path="/podrobno/:id">
+          <Podrobno/>
         </Route>
 
 
